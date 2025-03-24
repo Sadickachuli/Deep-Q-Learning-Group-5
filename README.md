@@ -5,7 +5,7 @@
 
 📌 Table of Contents
 
-1. [Project Overview](## 🎯 Project Overview)
+1. [Project Overview](🎯 Project Overview)
 2. [Environment Setup](## ⚙️ Environment Setup)
 3. [Training the DQN Agent](## 🤖 Training the DQN Agent)
 4. [Hyperparameter Tuning Results]()
