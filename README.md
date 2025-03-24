@@ -14,27 +14,36 @@
 7. [Key Takeaways](#takeaway)
 
 <h2 id="overview"> 🎯 Project Overview</h2>
+
 This project implements a Deep Q-Network (DQN) agent using Stable Baselines3 to play the Atari Breakout game. The agent learns through reinforcement learning by interacting with the environment and optimizing its policy to maximize rewards.
 
 ### Key Components
-✅ train.py – Trains the DQN model and saves it.
-✅ play.py – Loads the trained model and runs it in the environment.
-✅ Hyperparameter Tuning – Tests different learning rates, discount factors, and exploration strategies.
+
+* ✅ train.py – Trains the DQN model and saves it.
+* ✅ play.py – Loads the trained model and runs it in the environment.
+* ✅ Hyperparameter Tuning – Tests different learning rates, discount factors, and exploration strategies.
 
 <h2 id="environment"> ⚙️ Environment Setup</h2>
+
 Dependencies
+
 ```sh
 pip install stable-baselines3 gymnasium[atari] torch tensorboard
 ```
+
 ### Atari Environment
+
 - Uses BreakoutNoFrameskip-v4 (raw pixel observations).
 - Preprocessed with frame stacking and grayscaling (handled by Stable Baselines3).
 
 <h2 id="training"> 🤖 Training the DQN Agent</h2>
+
 ```sh
 python train.py
 ```
+
 ### Key Training Parameters
+
 |Parameter            |	Default Value |	Description                                          |
 |---------------------|---------------|------------------------------------------------------|
 |learning_rate	      |1e-4	          |Controls weight updates in the neural network.        |
@@ -44,8 +53,11 @@ python train.py
 |epsilon_end	        |0.01           |	Final exploration rate.                              |
 |exploration_fraction	| 0.1           |	Decay rate of epsilon (exploration vs. exploitation).|
 
+
 <h2 id="tuning"> 📊 Hyperparameter Tuning Results</h2>
+
 We tested 4 different hyperparameter configurations and recorded their mean rewards over training.
+
 |Learning Rate (lr) | Gamma (Y) | Batch size | Epsilon Start | Epsilon End | Exploration Fraction | Mean Reward |
 |-------------------|-----------|------------|---------------|-------------|----------------------|-------------|
 |1e-4               |0.99       |32          |1.0            |0.01         |0.1                   |59.8         |
@@ -54,6 +66,7 @@ We tested 4 different hyperparameter configurations and recorded their mean rewa
 |3e-4               |0.98       |128         |1.0            |0.02         |0.12                  |52.5         |
 
 ### Analysis of Results
+
 1. Best Performing Model (lr=2.5e-4, gamma=0.97, batch_size=64)
   - Achieved the highest mean reward (77.6).
   - Balanced exploration (exploration_fraction=0.15) and exploitation.
@@ -74,6 +87,7 @@ python play.py
 ```
 
 ### Expected Output
+
 - The agent plays 1000 episodes of Breakout.
 - Real-time rendering of the game.
 - Prints total reward per episode.
@@ -96,6 +110,7 @@ https://github.com/user-attachments/assets/b26653e6-f7ca-4594-b6d1-884376f8e74c
 
 
 ## 🚀 Conclusion
+
 This project successfully trained a DQN agent to play Atari Breakout, with hyperparameter tuning improving performance. The best model achieved a mean reward of 77.6, demonstrating effective learning.
 
 Future improvements:
