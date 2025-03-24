@@ -106,7 +106,7 @@ We compared CNNPolicy and MLPPolicy models using DQN to train an agent for Break
 
 - CNNPolicy outperformed the MLPPolicy, achieving an average reward of `59.8` and surviving `4940` timesteps per episode after `1 million` timesteps of training.
 
-- MLPPolicy struggled, with an average reward of only `1.65` and `781` timesteps per episode after `500,000` timesteps.
+- MLPPolicy struggled, with an average reward of only `1.65` and `781` timesteps per episode after `500,000` timesteps as you can view the `MLP_train.py` file above.
 
 Conclusion: The CNNPolicy is much more effective for visual tasks like Atari Breakout, as it processed the environment’s images better than the MLP model.
 
@@ -140,9 +140,9 @@ Conclusion: The CNNPolicy is much more effective for visual tasks like Atari Bre
 ## 👥 Group Collaboration & Individual Contributions
 
 Team Members:
-1. [Sadick Mustapha](https://github.com/sadickachuli/)
-2. [Teniola Ajani](https://github.com/elhameed/)
-3. [Mohamed Yasin](https://github.com/mohamedAYasin/)
+1. ## [Sadick Mustapha](https://github.com/sadickachuli/)
+2. ## [Teniola Ajani](https://github.com/elhameed/)
+3. ## [Mohamed Yasin](https://github.com/mohamedAYasin/)
 
 - In this project, we worked together as a team, having regular Google Meets and WhatsApp chats to share updates and keep each other informed about our progress.
 
