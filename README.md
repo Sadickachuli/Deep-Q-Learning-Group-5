@@ -140,9 +140,9 @@ Conclusion: The CNNPolicy is much more effective for visual tasks like Atari Bre
 ## 👥 Group Collaboration & Individual Contributions
 
 Team Members:
-1. ## [Sadick Mustapha](https://github.com/sadickachuli/)
-2. ## [Teniola Ajani](https://github.com/elhameed/)
-3. ## [Mohamed Yasin](https://github.com/mohamedAYasin/)
+1. #### [Sadick Mustapha](https://github.com/sadickachuli/)
+2. #### [Teniola Ajani](https://github.com/elhameed/)
+3. #### [Mohamed Yasin](https://github.com/mohamedAYasin/)
 
 - In this project, we worked together as a team, having regular Google Meets and WhatsApp chats to share updates and keep each other informed about our progress.
 
