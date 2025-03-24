@@ -144,6 +144,8 @@ Team Members:
 2. [Teniola Ajani](https://github.com/elhameed/)
 3. [Mohamed Yasin](https://github.com/mohamedAYasin/)
 
+- In this project, we worked together as a team, having regular Google Meets and WhatsApp chats to share updates and keep each other informed about our progress.
+
 ## 🚀 Conclusion
 
 This project successfully trained a DQN agent to play Atari Breakout, with hyperparameter tuning improving performance. The best model achieved a mean reward of 77.6, demonstrating effective learning.
