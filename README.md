@@ -113,12 +113,7 @@ https://github.com/user-attachments/assets/b26653e6-f7ca-4594-b6d1-884376f8e74c
 
 <b>Due to the model size, it isn't uploadable to Git Hub. You can access them here: https://drive.google.com/drive/folders/1HMOAaSmMu2m-qnoQtI5VhU68KqUbTfCl?usp=sharing</b>
 
-## 👥 Group Collaboration & Individual Contributions
 
-Team Members
-1. Sadick Mustapha
-2. Teniola Ajani
-3. Muhammed Yasin
 
 ### Work Distribution
 |Task                       | Assigned To             | Contribution Details                                         |
@@ -130,6 +125,13 @@ Team Members
 |Video Documentation        | Sadick                  | Recorded agent gameplay, edited demo                         |
 |README & Reporting         | Teniola                 | Wrote project documentation, results analysis                |
 
+
+## 👥 Group Collaboration & Individual Contributions
+
+Team Members:
+1. [Sadick Mustapha](https://github.com/sadickachuli/)
+2. [Teniola Ajani](https://github.com/elhameed/)
+3. [Mohamed Yasin](https://github.com/mohamedAYasin/)
 
 ## 🚀 Conclusion
 
