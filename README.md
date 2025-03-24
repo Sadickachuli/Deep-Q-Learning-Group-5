@@ -1,22 +1,20 @@
 # Deep-Q-Learning-with-Atari-Group-5
 
---------------------------------------------------------------------
-
 
 ![breakpic](https://github.com/user-attachments/assets/53d4d1c2-bd7b-4646-80ec-1dac49580b7a)
 
 📌 Table of Contents
 
-1. Project Overview
-2. Environment Setup
-3. Training the DQN Agent
-4. Hyperparameter Tuning Results
-5. Running the Trained Agent
-6. Video Demonstration
-7. Key Takeaways
+1. [Project Overview](## 🎯 Project Overview)
+2. [Environment Setup](## ⚙️ Environment Setup)
+3. [Training the DQN Agent](## 🤖 Training the DQN Agent)
+4. [Hyperparameter Tuning Results]()
+5. [Running the Trained Agent]()
+6. [Video Demonstration]()
+7. [Key Takeaways]()
 
 ## 🎯 Project Overview
-This project implements a Deep Q-Network (DQN) agent using Stable Baselines3 to play the Atari Breakout game. The agent learns through reinforcement learning by interacting with the environment, optimizing its policy to maximize rewards.
+This project implements a Deep Q-Network (DQN) agent using Stable Baselines3 to play the Atari Breakout game. The agent learns through reinforcement learning by interacting with the environment and optimizing its policy to maximize rewards.
 
 ### Key Components
 ✅ train.py – Trains the DQN model and saves it.
@@ -53,7 +51,7 @@ We tested 4 different hyperparameter configurations and recorded their mean rewa
 |1e-4               |0.99       |32          |1.0            |0.01         |0.1                   |59.8         |
 |5e-4               |0.95       |64          |1.0            |0.05         |0.2                   |73.3         |
 |2.5e-4             |0.97       |64          |1.0            |0.05         |0.15                  |77.6 (Best)  |
-|3e-4               |0.98       |128         |1.0            |0.02         |0.12                  |48.6         |
+|3e-4               |0.98       |128         |1.0            |0.02         |0.12                  |52.5         |
 
 ### Analysis of Results
 1. Best Performing Model (lr=2.5e-4, gamma=0.97, batch_size=64)
@@ -65,7 +63,7 @@ We tested 4 different hyperparameter configurations and recorded their mean rewa
   - Faster learning but less stable (reward variance higher).
     
 3. Large Batch Size (batch_size=128)
-  - Lower reward (48.6) – Possibly due to slower learning from fewer updates.
+  - Lower reward (52.5) – Due to slower learning from fewer updates.
     
 4. Default Parameters (lr=1e-4)
   - Stable but suboptimal compared to tuned versions.
