@@ -5,36 +5,36 @@ from gymnasium.wrappers import FrameStack
 import numpy as np
 import ale_py
 
-# Load the trained model
-model = DQN.load("dqn_breakout_model")  # Ensure this is the correct path to your trained model
+# Load trained model
+model = DQN.load("dqn_breakout_model") 
 
-# Create the environment
-env = gym.make("ALE/Breakout-v5", render_mode="human")  # Human mode for visualization
+# Using the breakout environment
+env = gym.make("ALE/Breakout-v5", render_mode="human")  
 
 # Apply preprocessing wrappers
-env = AtariWrapper(env)  # Resize to (84, 84)
-env = FrameStack(env, 4)  # Stack last 4 frames to match model input
+env = AtariWrapper(env)  
+env = FrameStack(env, 4) 
 
 # Reset the environment
 obs, _ = env.reset()
-obs = np.squeeze(obs)  # 🔧 Fix: Remove extra dimension (4, 84, 84, 1) -> (4, 84, 84)
+obs = np.squeeze(obs) 
 
-print("Observation shape after reset:", obs.shape)  # Debugging print
+print("Observation shape after reset:", obs.shape)  # check the shape
 
 # Play for 1000 steps
 for step in range(1000):
-    action, _states = model.predict(obs, deterministic=True)  # Get action from model
-    obs, reward, done, truncated, info = env.step(action)  # Step in environment
+    action, _states = model.predict(obs, deterministic=True)  
+    obs, reward, done, truncated, info = env.step(action)  
 
-    obs = np.squeeze(obs)  # 🔧 Fix: Remove extra dimension after each step
+    obs = np.squeeze(obs)  # Remove extra dimension after each step
 
-    print(f"Step {step}: obs.shape={obs.shape}, reward={reward}")  # Debugging print
+    print(f"Step {step}: obs.shape={obs.shape}, reward={reward}")  
 
-    env.render()  # Render game
+    env.render()  
     
     if done or truncated:
-        obs, _ = env.reset()  # Reset environment if game ends
-        obs = np.squeeze(obs)  # 🔧 Fix: Remove extra dimension
+        obs, _ = env.reset()  
+        obs = np.squeeze(obs)  # Again remove extra dimension if it resets
         print("Environment reset! New obs.shape:", obs.shape)
 
 # Close the environment
