@@ -6,7 +6,7 @@ import numpy as np
 import ale_py
 
 # Load trained model
-model = DQN.load("dqn_breakout_model") 
+model = DQN.load("dqn_breakout_model_3") 
 
 # Using the breakout environment
 env = gym.make("ALE/Breakout-v5", render_mode="human")  
