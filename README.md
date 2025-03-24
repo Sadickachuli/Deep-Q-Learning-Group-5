@@ -3,7 +3,7 @@
 
 ![breakpic](https://github.com/user-attachments/assets/53d4d1c2-bd7b-4646-80ec-1dac49580b7a)
 
-📌 Table of Contents
+## 📌 Table of Contents
 
 1. [Project Overview](#overview)
 2. [Environment Setup](#environment)
