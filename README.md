@@ -100,6 +100,16 @@ python play.py
 
 https://github.com/user-attachments/assets/b26653e6-f7ca-4594-b6d1-884376f8e74c
 
+<h2 id="Model Comparison:" CNNPolicy vs. MLPPolicy on Breakout</h2>
+We compared CNNPolicy and MLPPolicy models using DQN to train an agent for Breakout:
+
+CNNPolicy outperformed the MLPPolicy, achieving an average reward of 59.8 and surviving 4940 timesteps per episode after 1 million timesteps of training.
+
+MLPPolicy struggled, with an average reward of only 1.65 and 781 timesteps per episode after 500,000 timesteps.
+
+Conclusion:
+The CNNPolicy is much more effective for visual tasks like Breakout, as it processed the environment’s images better than the MLP model.
+
 <h2 id="takeaway"> 🔑 Key Takeaways</h2>
 
 1. Optimal Hyperparameters Matter
