@@ -131,8 +131,9 @@ Conclusion: The CNNPolicy is much more effective for visual tasks like Atari Bre
 |Environment Setup          | Sadick                  | Installed dependencies, configured `BreakoutNoFrameskip-v4`  |
 |DQN Training Script        | Sadick                  | Implemented `train.py` with callback logging                 |
 |Hyperparameter Tuning      | Teniola                 | Tested 4 configurations, recorded mean rewards               |
-|Play Script                | Muhammed                | Developed `play.py` with greedy policy                       |
+|Play Script                | Mohamed                 | Developed `play.py` with greedy policy                       |
 |Video Documentation        | Sadick                  | Recorded agent gameplay, edited demo                         |
+|MLP Vs CNN Policies        | Mohamed                 | Compared the wo policies by training them                    |
 |README & Reporting         | Teniola                 | Wrote project documentation, results analysis                |
 
 
