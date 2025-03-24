@@ -156,5 +156,5 @@ Future improvements:
 
 Enjoy your RL agent! 🎉
 
-
+![Image](https://github.com/user-attachments/assets/6f1169a6-5da0-4abe-a7af-8e0367996173)
 
