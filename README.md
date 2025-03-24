@@ -97,16 +97,32 @@ python play.py
 https://github.com/user-attachments/assets/b26653e6-f7ca-4594-b6d1-884376f8e74c
 
 <h2 id="takeaway"> 🔑 Key Takeaways</h2>
+
 1. Optimal Hyperparameters Matter
   - The best configuration (lr=2.5e-4, gamma=0.97) outperformed others.
   - Too high learning rates can destabilize training.
-    
 2. Exploration vs. Exploitation Trade-off
   - Lower epsilon_end (0.01) leads to more exploitation but may get stuck.
-  - Higher epsilon_end (0.05) allows continued exploration.
-    
+  - Higher epsilon_end (0.05) allows continued exploration.  
 3. Batch Size Impact
   - Smaller batches (32-64) worked better than 128.
+
+## 👥 Group Collaboration & Individual Contributions
+
+Team Members
+1. Sadick Mustapha
+2. Teniola Ajani
+3. Muhammed Yasin
+
+### Work Distribution
+|Task                       | Assigned To             | Contribution Details                                         |
+|---------------------------|-------------------------|--------------------------------------------------------------|
+|Environment Setup          | Sadick                  | Installed dependencies, configured `BreakoutNoFrameskip-v4`  |
+|DQN Training Script        | Sadick                  | Implemented `train.py` with callback logging                 |
+|Hyperparameter Tuning      | Teniola                 | Tested 4 configurations, recorded mean rewards               |
+|Play Script                | Muhammed                | Developed `play.py` with greedy policy                       |
+|Video Documentation        | Sadick                  | Recorded agent gameplay, edited demo                         |
+|README & Reporting         | Teniola                 | Wrote project documentation, results analysis                |
 
 
 ## 🚀 Conclusion
