@@ -5,15 +5,15 @@
 
 📌 Table of Contents
 
-1. [Project Overview](🎯 Project Overview)
-2. [Environment Setup](## ⚙️ Environment Setup)
-3. [Training the DQN Agent](## 🤖 Training the DQN Agent)
-4. [Hyperparameter Tuning Results]()
-5. [Running the Trained Agent]()
-6. [Video Demonstration]()
-7. [Key Takeaways]()
+1. [Project Overview](#overview)
+2. [Environment Setup](#environment)
+3. [Training the DQN Agent](#training)
+4. [Hyperparameter Tuning Results](#tuning)
+5. [Running the Trained Agent](#running)
+6. [Video Demonstration](#video)
+7. [Key Takeaways](#takeaway)
 
-## 🎯 Project Overview
+<h2 id="overview"> 🎯 Project Overview</h2>
 This project implements a Deep Q-Network (DQN) agent using Stable Baselines3 to play the Atari Breakout game. The agent learns through reinforcement learning by interacting with the environment and optimizing its policy to maximize rewards.
 
 ### Key Components
@@ -21,7 +21,7 @@ This project implements a Deep Q-Network (DQN) agent using Stable Baselines3 to 
 ✅ play.py – Loads the trained model and runs it in the environment.
 ✅ Hyperparameter Tuning – Tests different learning rates, discount factors, and exploration strategies.
 
-## ⚙️ Environment Setup
+<h2 id="environment"> ⚙️ Environment Setup</h2>
 Dependencies
 ```sh
 pip install stable-baselines3 gymnasium[atari] torch tensorboard
@@ -30,7 +30,7 @@ pip install stable-baselines3 gymnasium[atari] torch tensorboard
 - Uses BreakoutNoFrameskip-v4 (raw pixel observations).
 - Preprocessed with frame stacking and grayscaling (handled by Stable Baselines3).
 
-## 🤖 Training the DQN Agent
+<h2 id="training"> 🤖 Training the DQN Agent</h2>
 ```sh
 python train.py
 ```
@@ -44,7 +44,7 @@ python train.py
 |epsilon_end	        |0.01           |	Final exploration rate.                              |
 |exploration_fraction	| 0.1           |	Decay rate of epsilon (exploration vs. exploitation).|
 
-## 📊 Hyperparameter Tuning Results
+<h2 id="tuning"> 📊 Hyperparameter Tuning Results</h2>
 We tested 4 different hyperparameter configurations and recorded their mean rewards over training.
 |Learning Rate (lr) | Gamma (Y) | Batch size | Epsilon Start | Epsilon End | Exploration Fraction | Mean Reward |
 |-------------------|-----------|------------|---------------|-------------|----------------------|-------------|
@@ -68,7 +68,7 @@ We tested 4 different hyperparameter configurations and recorded their mean rewa
 4. Default Parameters (lr=1e-4)
   - Stable but suboptimal compared to tuned versions.
 
-## 🎮 Running the Trained Agent
+<h2 id="running"> 🎮 Running the Trained Agent</h2>
 ```sh
 python play.py
 ```
@@ -78,11 +78,11 @@ python play.py
 - Real-time rendering of the game.
 - Prints total reward per episode.
   
-## Video Demonstration
+<h2 id="video"> Video Demonstration</h2>
 
 https://github.com/user-attachments/assets/b26653e6-f7ca-4594-b6d1-884376f8e74c
 
-## 🔑 Key Takeaways
+<h2 id="takeaway"> 🔑 Key Takeaways</h2>
 1. Optimal Hyperparameters Matter
   - The best configuration (lr=2.5e-4, gamma=0.97) outperformed others.
   - Too high learning rates can destabilize training.
