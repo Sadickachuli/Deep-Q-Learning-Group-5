@@ -33,14 +33,16 @@ pip install stable-baselines3 gymnasium[atari] torch tensorboard
 
 ### Atari Environment
 
-- Uses BreakoutNoFrameskip-v4 (raw pixel observations).
-- Preprocessed with frame stacking and grayscaling (handled by Stable Baselines3).
+- Uses `BreakoutNoFrameskip-v4` (raw pixel observations).
+- Preprocessed with frame stacking and grayscaling (handled by `Stable Baselines3`).
 
 <h2 id="training"> 🤖 Training the DQN Agent</h2>
+
 
 ```sh
 python train.py
 ```
+
 
 ### Key Training Parameters
 
@@ -67,21 +69,23 @@ We tested 4 different hyperparameter configurations and recorded their mean rewa
 
 ### Analysis of Results
 
-1. Best Performing Model (lr=2.5e-4, gamma=0.97, batch_size=64)
+1. Best Performing Model (`lr=2.5e-4`, `gamma=0.97`, `batch_size=64`)
   - Achieved the highest mean reward (77.6).
-  - Balanced exploration (exploration_fraction=0.15) and exploitation.
+  - Balanced exploration (`exploration_fraction=0.15`) and exploitation.
   - Moderate learning rate helped avoid instability.
 
-2. High Learning Rate (lr=5e-4)
+2. High Learning Rate (`lr=5e-4`)
   - Faster learning but less stable (reward variance higher).
     
-3. Large Batch Size (batch_size=128)
+3. Large Batch Size (`batch_size=128`)
   - Lower reward (52.5) – Due to slower learning from fewer updates.
     
-4. Default Parameters (lr=1e-4)
+4. Default Parameters (`lr=1e-4`)
   - Stable but suboptimal compared to tuned versions.
 
 <h2 id="running"> 🎮 Running the Trained Agent</h2>
+
+
 ```sh
 python play.py
 ```
@@ -99,13 +103,15 @@ https://github.com/user-attachments/assets/b26653e6-f7ca-4594-b6d1-884376f8e74c
 <h2 id="takeaway"> 🔑 Key Takeaways</h2>
 
 1. Optimal Hyperparameters Matter
-  - The best configuration (lr=2.5e-4, gamma=0.97) outperformed others.
+  - The best configuration (`lr=2.5e-4`, `gamma=0.97`) outperformed others.
   - Too high learning rates can destabilize training.
 2. Exploration vs. Exploitation Trade-off
-  - Lower epsilon_end (0.01) leads to more exploitation but may get stuck.
-  - Higher epsilon_end (0.05) allows continued exploration.  
+  - Lower `epsilon_end` (0.01) leads to more exploitation but may get stuck.
+  - Higher `epsilon_end` (0.05) allows continued exploration.  
 3. Batch Size Impact
-  - Smaller batches (32-64) worked better than 128.
+  - Smaller batches (32-64) worked better than `128`.
+
+<b>Due to the model size, it isn't uploadable to Git Hub. You can access them here: https://drive.google.com/drive/folders/1HMOAaSmMu2m-qnoQtI5VhU68KqUbTfCl?usp=sharing</b>
 
 ## 👥 Group Collaboration & Individual Contributions
 
